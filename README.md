@@ -39,6 +39,6 @@ npm start
 
 Edward Noramirian
 
-> GitHub: [@ednoram](www.github.com/ednoram)
+> GitHub: [@ednoram](https://github.com/ednoram)
 
 > Email: e.noramirian@gmail.com
