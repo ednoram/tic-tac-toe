@@ -1,0 +1,20 @@
+import React from "react";
+
+import { ReactComponent as XIcon } from "../../assets/x_icon.svg";
+import { ReactComponent as OIcon } from "../../assets/o_icon.svg";
+
+const PickPlayer = ({ setCurrentPlayer }) => {
+  return (
+    <div className="pick_player">
+      <div className="selection_div" onClick={() => setCurrentPlayer("X")}>
+        <XIcon className="player_icon" />
+      </div>
+      <div className="vertical_line"></div>
+      <div className="selection_div" onClick={() => setCurrentPlayer("O")}>
+        <OIcon className="player_icon" />
+      </div>
+    </div>
+  );
+};
+
+export default PickPlayer;
