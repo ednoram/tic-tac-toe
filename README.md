@@ -34,12 +34,6 @@ git clone https://github.com/ednoram/tic-tac-toe.git
 > Run the following commands.
 
 ```sh
-git clone https://github.com/ednoram/tic-tac-toe.git
-```
-
-> Run the following commands.
-
-```sh
 npm install
 npm start
 ```
