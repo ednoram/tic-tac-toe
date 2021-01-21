@@ -26,6 +26,7 @@ This is a tic-tac-toe game made with React JS.
 ## Installation
 
 > Clone Repository.
+<<<<<<< HEAD
 
 ```sh
 git clone https://github.com/ednoram/tic-tac-toe.git
@@ -33,6 +34,12 @@ git clone https://github.com/ednoram/tic-tac-toe.git
 
 > Run the following commands.
 
+=======
+```sh
+git clone https://github.com/ednoram/tic-tac-toe.git
+```
+> Run the following commands.
+>>>>>>> 77f58441991fb6a5839935f365b5183a634cef55
 ```sh
 npm install
 npm start
