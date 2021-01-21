@@ -38,8 +38,6 @@ git clone https://github.com/ednoram/tic-tac-toe.git
 ```
 
 > Run the following commands.
->
-> > > > > > > 77f58441991fb6a5839935f365b5183a634cef55
 
 ```sh
 npm install
