@@ -1,6 +1,6 @@
 # Tic Tac Toe Game
 
-This is a tic-tac-toe game created using React JS.
+This is a two-player tic-tac-toe game created using React JS.
 
 ## Features
 
@@ -14,6 +14,10 @@ This is a tic-tac-toe game created using React JS.
 
 - Has a restart button
 
+## Demo
+
+> https://tic-tac-toe.ednoram.vercel.app/
+
 ## Screenshot
 
 ![app-screenshot](https://raw.githubusercontent.com/ednoram/tic-tac-toe/master/src/assets/app-screenshot.png)
@@ -22,7 +26,7 @@ This is a tic-tac-toe game created using React JS.
 
 - Javascript ES6
 - React JS
-- Sass
+- Sass (SCSS)
 
 ## Installation
 
