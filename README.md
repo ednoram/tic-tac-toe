@@ -1,6 +1,6 @@
-# Tic Tac Toe Game (Javascript)
+# Tic Tac Toe Game
 
-This is a tic-tac-toe game made with React JS.
+This is a tic-tac-toe game created using React JS.
 
 ## Features
 
@@ -18,8 +18,9 @@ This is a tic-tac-toe game made with React JS.
 
 ![app-screenshot](https://raw.githubusercontent.com/ednoram/tic-tac-toe/master/src/assets/app-screenshot.png)
 
-## Built with
+## Technologies
 
+- Javascript ES6
 - React JS
 - Sass
 
@@ -31,7 +32,7 @@ This is a tic-tac-toe game made with React JS.
 git clone https://github.com/ednoram/tic-tac-toe.git
 ```
 
-> Run the following commands.
+> Run the following commands in your terminal.
 
 ```sh
 npm install
