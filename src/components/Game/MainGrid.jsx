@@ -45,7 +45,7 @@ const MainGrid = ({
       });
 
       if (!winner && !gridData.includes("")) {
-        setWinner("Draw");
+        setWinner("Tie");
         restartGame();
       }
     });

@@ -151,7 +151,7 @@
   }
 
   .winner_div {
-    .draw {
+    .tie {
       font-size: 80px;
       font-weight: normal;
 
@@ -173,7 +173,7 @@
     }
 
     .player_won {
-      @extend .draw;
+      @extend .tie;
       display: flex;
       align-items: center;
       justify-content: center;

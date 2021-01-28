@@ -13,8 +13,8 @@ const Winner = ({ winner, setWinner, restartGame }) => {
   return (
     <div className="winner_div">
       <div>
-        {winner === "Draw" ? (
-          <h3 className="draw">Draw</h3>
+        {winner === "Tie" ? (
+          <h3 className="tie">Tie</h3>
         ) : (
           <h3 className="player_won">
             Player
