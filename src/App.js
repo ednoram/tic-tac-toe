@@ -3,15 +3,14 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./styles/style.scss";
 
-import Game from "./components/Game";
-import FirstPage from "./components/FirstPage";
+import { GameContainer, FirstPageContainer } from "./containers";
 
 const App = () => {
   return (
     <Router>
       <Switch>
-        <Route exact path="/play" component={Game} />
-        <Route exact path="/" component={FirstPage} />
+        <Route exact path="/play" component={GameContainer} />
+        <Route exact path="/" component={FirstPageContainer} />
       </Switch>
     </Router>
   );

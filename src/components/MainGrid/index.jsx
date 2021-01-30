@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import PropTypes from "prop-types";
 
+import "./main_grid.scss";
+
 import { ReactComponent as XIcon } from "../../assets/x_icon.svg";
 import { ReactComponent as OIcon } from "../../assets/o_icon.svg";
 import { ReactComponent as BlackGrid } from "../../assets/black_grid.svg";
@@ -10,9 +12,11 @@ const MainGrid = ({
   winner,
   gridData,
   setWinner,
+  resetScore,
   setGridData,
   restartGame,
   currentPlayer,
+  scoreIsInitial,
   setCurrentPlayer,
 }) => {
   const insertIcon = (index) => {
@@ -79,13 +83,16 @@ const MainGrid = ({
         ))}
         <BlackGrid className="grid_svg" />
       </div>
-      <p
-        className="responsive_restart_p"
-        role="button"
-        onClick={() => restartGame()}
-      >
-        Restart Game
-      </p>
+      <div className="responsive_restart_reset">
+        <p role="button" onClick={() => restartGame()}>
+          Restart Game
+        </p>
+        {!scoreIsInitial && (
+          <p role="button" onClick={() => resetScore()}>
+            Reset Score
+          </p>
+        )}
+      </div>
     </>
   );
 };
@@ -94,8 +101,10 @@ MainGrid.propTypes = {
   winner: PropTypes.string,
   setWinner: PropTypes.func,
   gridData: PropTypes.array,
+  resetScore: PropTypes.func,
   setGridData: PropTypes.func,
   restartGame: PropTypes.func,
+  scoreIsInitial: PropTypes.bool,
   currentPlayer: PropTypes.string,
   setCurrentPlayer: PropTypes.func,
 };
@@ -105,6 +114,8 @@ MainGrid.defaultProps = {
   gridData: [],
   currentPlayer: "",
   setWinner: () => {},
+  resetScore: () => {},
+  scoreIsInitial: true,
   setGridData: () => {},
   restartGame: () => {},
   setCurrentPlayer: () => {},

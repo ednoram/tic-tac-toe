@@ -36,4 +36,6 @@ const key_indexes = {
   },
 };
 
-export { initialGridData, winCombinations, key_indexes };
+const initialScore = { X: 0, O: 0 };
+
+export { initialGridData, winCombinations, key_indexes, initialScore };
