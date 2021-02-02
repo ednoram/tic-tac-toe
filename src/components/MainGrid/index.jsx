@@ -56,7 +56,7 @@ const MainGrid = ({
   }, [gridData, restartGame, winner, setWinner]);
 
   useEffect(() => {
-    const keyUpHandler = (event) => {
+    const keyupHandler = (event) => {
       event.stopImmediatePropagation();
       const keyCode = event.keyCode;
 
@@ -67,9 +67,9 @@ const MainGrid = ({
       }
     };
 
-    window.addEventListener("keyup", keyUpHandler);
+    window.addEventListener("keydown", keyupHandler);
 
-    return () => window.removeEventListener("keyup", keyUpHandler);
+    return () => window.removeEventListener("keydown", keyupHandler);
   });
 
   return (
